@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <title>手风琴效果</title>
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+
+<body>
+    <div class="dowebok">
+        <div class="options">
+            <div class="option active" style="--optionBackground:url(../images/1.jpg);">
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="icon">
+                        <i class="fas fa-walking"></i>
+                    </div>
+                    <div class="info">
+                        <div class="main"></div>
+                        <div class="sub"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="option" style="--optionBackground:url(../images/2.jpg);">
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="icon">
+                        <i class="fas fa-snowflake"></i>
+                    </div>
+                    <div class="info">
+                        <div class="main"></div>
+                        <div class="sub"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="option" style="--optionBackground:url(../images/3.jpg);">
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="icon">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <div class="info">
+                        <div class="main"></div>
+                        <div class="sub"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="option" style="--optionBackground:url(../images/4.jpg);">
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <div class="info">
+                        <div class="main"></div>
+                        <div class="sub"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(".option").click(function () {
+            $(".option").removeClass("active");
+            $(this).addClass("active");
+        });
+    </script>
+</body>
+</html>
